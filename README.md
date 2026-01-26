@@ -20,19 +20,19 @@ Download watch frames from [Apple Design Resources](https://developer.apple.com/
 ### Frame a video
 
 ```bash
-python3 frame_video.py -s recording.mov
+python3 watchframe.py -s recording.mov
 ```
 
 ### Frame an image
 
 ```bash
-python3 frame_video.py -s screenshot.png
+python3 watchframe.py -s screenshot.png
 ```
 
 ### Custom frame and output
 
 ```bash
-python3 frame_video.py -s input.mov -f custom_frame.png -o output.mp4
+python3 watchframe.py -s input.mov -f custom_frame.png -o output.mp4
 ```
 
 ### Manual screen positioning
@@ -40,7 +40,7 @@ python3 frame_video.py -s input.mov -f custom_frame.png -o output.mp4
 If auto-detection doesn't find the correct screen area:
 
 ```bash
-python3 frame_video.py -s recording.mov --screen-x 95 --screen-y 219 --screen-width 410 --screen-height 502
+python3 watchframe.py -s recording.mov --screen-x 95 --screen-y 219 --screen-width 410 --screen-height 502
 ```
 
 ## How It Works
