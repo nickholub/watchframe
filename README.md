@@ -20,13 +20,13 @@ Download watch frames from [Apple Design Resources](https://developer.apple.com/
 ### Frame a video
 
 ```bash
-python3 watchframe.py -s recording.mov -f "PNG/Milanese Loop/AW Ultra 3 - Black + Milanese Loop.png"
+python3 watchframe.py -s examples/recording.mov -f "PNG/Milanese Loop/AW Ultra 3 - Black + Milanese Loop.png"
 ```
 
 ### Frame an image
 
 ```bash
-python3 watchframe.py -s screenshot.png -f "PNG/Milanese Loop/AW Ultra 3 - Black + Milanese Loop.png"
+python3 watchframe.py -s examples/screenshot.png -f "PNG/Milanese Loop/AW Ultra 3 - Black + Milanese Loop.png"
 ```
 
 ### Custom output path

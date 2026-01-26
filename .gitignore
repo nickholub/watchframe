@@ -1,11 +1,10 @@
 # Apple Watch frames (download from Apple Design Resources)
 PNG/
 
-# Sample/output files
-*.mov
-*.mp4
+# Example/output files
+examples/
 *_framed.png
-sample_*.png
+*_framed.mp4
 
 # Apple Watch frame assets (may have licensing restrictions)
 AW*.png
