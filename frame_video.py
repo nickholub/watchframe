@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Apple Watch Video Framer
-Wraps an Apple Watch screen recording into a watch frame for presentation.
+watchframe - Wraps Apple Watch screen recordings into a device frame for presentation.
 """
 
 import argparse

@@ -1,4 +1,4 @@
-# Apple Watch Video Framer
+# watchframe
 
 Wrap Apple Watch screen recordings and screenshots in a device frame for presentation-ready output.
 
