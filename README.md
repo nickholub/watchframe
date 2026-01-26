@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 Download watch frames from [Apple Design Resources](https://developer.apple.com/design/resources/#product-bezels):
 
-1. Download "Apple Watch Ultra 2" bezels
+1. Download "Apple Watch" bezels
 2. Extract and copy the `PNG/` folder to this project's root directory
 
 ## Usage
@@ -20,19 +20,19 @@ Download watch frames from [Apple Design Resources](https://developer.apple.com/
 ### Frame a video
 
 ```bash
-python3 watchframe.py -s recording.mov
+python3 watchframe.py -s recording.mov -f "PNG/Milanese Loop/AW Ultra 3 - Black + Milanese Loop.png"
 ```
 
 ### Frame an image
 
 ```bash
-python3 watchframe.py -s screenshot.png
+python3 watchframe.py -s screenshot.png -f "PNG/Milanese Loop/AW Ultra 3 - Black + Milanese Loop.png"
 ```
 
-### Custom frame and output
+### Custom output path
 
 ```bash
-python3 watchframe.py -s input.mov -f custom_frame.png -o output.mp4
+python3 watchframe.py -s input.mov -f frame.png -o output.mp4
 ```
 
 ### Manual screen positioning
@@ -40,7 +40,7 @@ python3 watchframe.py -s input.mov -f custom_frame.png -o output.mp4
 If auto-detection doesn't find the correct screen area:
 
 ```bash
-python3 watchframe.py -s recording.mov --screen-x 95 --screen-y 219 --screen-width 410 --screen-height 502
+python3 watchframe.py -s recording.mov -f frame.png --screen-x 95 --screen-y 219 --screen-width 410 --screen-height 502
 ```
 
 ## How It Works

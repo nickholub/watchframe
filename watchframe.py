@@ -258,11 +258,13 @@ def main():
     )
     parser.add_argument(
         '-s', '--source',
+        required=True,
         help='Input video or image file'
     )
     parser.add_argument(
         '-f', '--frame',
-        help='Watch frame PNG with transparent screen area (auto-detects if not specified)'
+        required=True,
+        help='Watch frame PNG with transparent screen area'
     )
     parser.add_argument(
         '-o', '--output',
@@ -287,39 +289,8 @@ def main():
 
     args = parser.parse_args()
 
-    # Show usage if no arguments provided
-    if len(sys.argv) == 1:
-        parser.print_help()
-        print("\nExamples:")
-        print("  python3 frame_video.py -s recording.mov")
-        print("  python3 frame_video.py -s recording.mov -f frame.png")
-        print("  python3 frame_video.py -s screenshot.png -f frame.png -o output.png")
-        sys.exit(0)
-
-    if not args.source:
-        print("Error: -s/--source is required")
-        sys.exit(1)
-
     source_path = Path(args.source)
-
-    if args.frame:
-        frame_path = Path(args.frame)
-    else:
-        # Use default frame from PNG folder
-        script_dir = Path(__file__).parent
-        default_frame = script_dir / "PNG" / "Milanese Loop" / "AW Ultra 2 - Black + Titanium Milanese Loop.png"
-        if not default_frame.exists():
-            print("Error: Default frame not found.")
-            print("")
-            print("To download Apple Watch frames:")
-            print("  1. Visit https://developer.apple.com/design/resources/#product-bezels")
-            print("  2. Download 'Apple Watch Ultra 2' bezels")
-            print("  3. Extract and copy the PNG folder to this project's root folder")
-            print("")
-            print("Or specify a custom frame with -f argument.")
-            sys.exit(1)
-        frame_path = default_frame
-        print(f"Using default frame: {frame_path.name}")
+    frame_path = Path(args.frame)
 
     # Determine if source is image or video
     is_image = is_image_file(source_path)
