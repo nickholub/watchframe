@@ -1,8 +1,7 @@
 # Apple Watch frames (download from Apple Design Resources)
 PNG/
 
-# Example/output files
-examples/
+# Output files (in root)
 *_framed.png
 *_framed.mp4
 
