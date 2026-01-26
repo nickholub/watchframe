@@ -4,17 +4,9 @@ Wrap Apple Watch screen recordings and screenshots in a device frame for present
 
 ## Example
 
-### Screenshot
-
 | Before | After |
 |--------|-------|
 | ![Screenshot](examples/screenshot.png) | ![Framed](examples/screenshot_framed.png) |
-
-### Video
-
-| Before | After |
-|--------|-------|
-| [recording.mov](examples/recording.mov) | [recording_framed.mp4](examples/recording_framed.mp4) |
 
 ## Installation
 
