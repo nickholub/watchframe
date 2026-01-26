@@ -1,0 +1,38 @@
+# Apple Watch frames (download from Apple Design Resources)
+PNG/
+
+# Sample/output files
+*.mov
+*.mp4
+*_framed.png
+sample_*.png
+
+# Apple Watch frame assets (may have licensing restrictions)
+AW*.png
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Claude Code
+.claude/
+claude.md
