@@ -2,6 +2,12 @@
 
 Wrap Apple Watch screen recordings and screenshots in a device frame for presentation-ready output.
 
+## Example
+
+| Before | After |
+|--------|-------|
+| ![Screenshot](examples/screenshot.png) | ![Framed](examples/screenshot_framed.png) |
+
 ## Installation
 
 ```bash
