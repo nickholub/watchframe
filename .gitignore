@@ -4,6 +4,7 @@ PNG/
 # Output files (in root only, not examples/)
 /*_framed.png
 /*_framed.mp4
+generated/
 
 # Apple Watch frame assets (may have licensing restrictions)
 AW*.png
